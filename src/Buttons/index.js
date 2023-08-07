@@ -1,6 +1,6 @@
 import "./style.css"
 
-const Buttons = ({ tasks, hideDone, toggleHideDone}) => (
+const Buttons = ({ tasks, hideDone, toggleHideDone }) => (
 
 	<span className="buttons">
 		{tasks.length > 0 && (
