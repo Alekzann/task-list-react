@@ -6,9 +6,9 @@ const Tasks = ({ tasks, hideDone, removeTask, toggleTaskDone }) => (
       <li key={task.id}
         className={`section__item ${hideDone && task.done ? " section__item--hidden" : ""}`}
       >
-        <button 
-        className="section__buttonDone"
-        onClick={() => toggleTaskDone(task.id)}
+        <button
+          className="section__buttonDone"
+          onClick={() => toggleTaskDone(task.id)}
         >
           {task.done ? "✔" : ""}
         </button>
