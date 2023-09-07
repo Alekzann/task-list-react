@@ -18,10 +18,7 @@ https://alekzann.github.io/task-list-react/
 
 ## This is my Tasks-List with interactions !!!
 
-
-
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![todolist-gif](https://github.com/Alekzann/task-list-react/assets/134525143/7c5340f8-9ea5-46f1-bfd8-5818104a1a5b)
 
 ## Available Scripts
 
