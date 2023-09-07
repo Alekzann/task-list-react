@@ -5,7 +5,7 @@ Description
 # Getting Started with Create React App
 
 ## DEMO
-
+https://alekzann.github.io/task-list-react/
 
 ## Technologies used:
 - HTML
