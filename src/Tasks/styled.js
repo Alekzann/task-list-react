@@ -36,8 +36,8 @@ export const Button = styled.button`
   justify-content:center;
   align-items: center;
 
-	${({ toggleDone }) => toggleDone && css`
-		background-color: green;
+	${({ $toggleDone }) => $toggleDone && css`
+		background: green;
 		
 		&:focus{
 			outline: 1px solid rgb(48, 30, 30);
@@ -47,7 +47,7 @@ export const Button = styled.button`
 			background-color: hsl(120, 100%, 29%);
 		};
 	`}
-	${({ remove }) => remove && css`
+	${({ $remove }) => $remove && css`
 		background-color: red;	
 		
 		&:hover{
