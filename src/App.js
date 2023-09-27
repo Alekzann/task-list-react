@@ -12,7 +12,8 @@ function App() {
 
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
-  }, [tasks]);
+  }, [tasks]
+  );
 
   const removeTask = (id) => {
     setTasks(tasks => tasks.filter(task => task.id !== id));
@@ -29,7 +30,7 @@ function App() {
 
   const toggleAllDone = () => {
     setTasks(tasks => tasks.map(task => ({ ...task, done: true })))
-  }
+  };
 
   const toggleHideDone = () => { setHideDone(hideDone => !hideDone) };
 

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { FormStyle, Input, Button } from "./styled.js"
+import { FormStyle, Input, Button } from "./styled.js";
 
 const Form = ({ addNewTask }) => {
   const [newTaskContent, setNewTaskContent] = useState("");
@@ -22,6 +22,6 @@ const Form = ({ addNewTask }) => {
       </Button>
     </FormStyle>
   );
-}
+};
 
 export default Form;

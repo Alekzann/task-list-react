@@ -1,4 +1,4 @@
-import { HeaderStyle } from "./styled.js"
+import { HeaderStyle } from "./styled.js";
 
 const Header = ({ title }) => (
   <HeaderStyle>
@@ -6,6 +6,6 @@ const Header = ({ title }) => (
       {title}
     </h1>
   </HeaderStyle>
-)
+);
 
 export default Header;
