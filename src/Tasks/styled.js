@@ -21,7 +21,7 @@ export const Item = styled.li`
 export const Content = styled.span`
 	${({ done }) => done && css`
 		text-decoration: line-through;
-	`}
+	`};
 `;
 
 export const Button = styled.button`
@@ -41,20 +41,21 @@ export const Button = styled.button`
 		
 		&:focus{
 			outline: 1px solid rgb(48, 30, 30);
-    	border-radius: 3px;}
+    	border-radius: 3px;
+		};
 		&:hover{
 			background-color: hsl(120, 100%, 29%);
-		}
+		};
 	`}
 	${({ remove }) => remove && css`
 		background-color: red;	
 		
 		&:hover{
 			background-color: hsl(0, 100%, 65%);
-		}
+		};
 		&:focus{
 			outline: 1px solid rgb(88, 55, 55);
     	border-radius: 3px;
-		}
+		};
 	`}
 `;
