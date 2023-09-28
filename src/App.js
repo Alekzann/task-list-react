@@ -3,21 +3,21 @@ import Tasks from "./Tasks";
 import Buttons from "./Buttons";
 import Section from "./Section";
 import Header from "./Header";
-import Container from "./Container";
+import Container from "./Container/styled.js";
 import useTasks from "./useTasks";
-import { useState } from 'react';
+
 
 function App() {
-  const [hideDone, setHideDone] = useState(false);
 
-  const toggleHideDone = () => { setHideDone(hideDone => !hideDone) };
 
   const {
     tasks,
+    hideDone,
     removeTask,
     toggleTaskDone,
     toggleAllDone,
     addNewTask,
+    toggleHideDone,
   } = useTasks();
 
   return (
