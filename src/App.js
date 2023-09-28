@@ -6,10 +6,7 @@ import Header from "./Header";
 import Container from "./Container/styled.js";
 import useTasks from "./useTasks";
 
-
 function App() {
-
-
   const {
     tasks,
     hideDone,
@@ -35,14 +32,16 @@ function App() {
             hideDone={hideDone}
             removeTask={removeTask}
             toggleTaskDone={toggleTaskDone}
-          />}
+          />
+        }
         extraHeaderContent={
           <Buttons
             tasks={tasks}
             hideDone={hideDone}
             toggleHideDone={toggleHideDone}
             toggleAllDone={toggleAllDone}
-          />}
+          />
+        }
       />
     </Container>
   );
