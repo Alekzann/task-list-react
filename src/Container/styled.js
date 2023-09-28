@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ContainerStyle = styled.main`
+const Container = styled.main`
   max-width: 900px;
   margin: 20px auto;
 
@@ -9,3 +9,5 @@ export const ContainerStyle = styled.main`
   margin: 10px;
 };
 `;
+
+export default Container;
