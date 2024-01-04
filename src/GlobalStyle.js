@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 
-const GlobalStyle = createGlobalStyle`
+export const GlobalStyle = createGlobalStyle`
   html {
     box-sizing: border-box;
   };
@@ -16,5 +16,3 @@ const GlobalStyle = createGlobalStyle`
     word-break: break-word;
   };
 `;
-
-export default GlobalStyle;
