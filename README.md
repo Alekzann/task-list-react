@@ -23,7 +23,6 @@ https://alekzann.github.io/task-list-react/
 - Media queries;
 - Babel;
 - API request;
-- React DOM;
 - Axios;
 - State;
 - Effect and Ref hooks;
