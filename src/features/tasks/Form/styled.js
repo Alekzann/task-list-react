@@ -12,15 +12,15 @@ export const FormStyle = styled.form`
 
 export const Input = styled.input`
   border: 1px solid rgb(170, 163, 163);
-  border-radius: 3px;
+  border-radius: ${({ theme }) => theme.borderRadius.borderRadius}px;
   padding: 10px;
 `;
 
 export const Button = styled.button`
   border-style: none;
-  background-color: teal;
+  background-color: ${({ theme }) => theme.colors.secondaryColor};
   color: aliceblue;
-  border-radius: 3px;
+  border-radius: ${({ theme }) => theme.borderRadius.borderRadius}px;
   padding: 10px 20px;
   transition: 0.3s;
 

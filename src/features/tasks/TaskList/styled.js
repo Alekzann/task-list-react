@@ -35,11 +35,10 @@ export const Button = styled.button`
   height: 30px;
   color: white;
   transition: 0.3s;
-  width: 30px;
-  height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: ${({ theme }) => theme.borderRadius.borderRadius}px;
 
   ${({ $toggleDone }) =>
     $toggleDone &&
@@ -48,7 +47,7 @@ export const Button = styled.button`
 
       &:focus {
         outline: 1px solid rgb(48, 30, 30);
-        border-radius: 3px;
+        border-radius: ${({ theme }) => theme.borderRadius.borderRadius}px;
       }
       &:hover {
         background-color: hsl(120, 100%, 29%);
@@ -64,7 +63,7 @@ export const Button = styled.button`
       }
       &:focus {
         outline: 1px solid rgb(88, 55, 55);
-        border-radius: 3px;
+        border-radius: ${({ theme }) => theme.borderRadius.borderRadius}px;
       }
     `}
 `;

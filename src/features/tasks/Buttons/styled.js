@@ -9,7 +9,7 @@ export const Button = styled.button`
   border: none;
   background: transparent;
   font-size: 18px;
-  color: hsl(180, 100%, 25%);
+  color: ${({ theme }) => theme.colors.secondaryColor};
   transition: 0.3s;
   margin: 20px;
 
