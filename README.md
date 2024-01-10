@@ -8,13 +8,28 @@ Description
 https://alekzann.github.io/task-list-react/
 
 ## Technologies used:
-- HTML
-- CSS
-- JavaScript
-- BEM
-- Grid
-- React
-- Flex
+- React;
+- Redux;
+- HTML;
+- CSS;
+- JavaScript;
+- BEM;
+- Grid;
+- Flex;
+- Google Fonts;
+- Normalize;
+- JSON;
+- Webpack;
+- Media queries;
+- Babel;
+- API request;
+- React DOM;
+- Axios;
+- State;
+- Effect and Ref hooks;
+- async / await;
+- setInterval;
+- Styled Components;
 
 ## This is my Tasks-List with interactions !!!
 
