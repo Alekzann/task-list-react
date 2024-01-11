@@ -19,7 +19,7 @@ const tasksSlice = createSlice({
     },
     toggleAllDone: (state) => {
       state.tasks.forEach((task) => {
-        task.done = !state.hideDone;
+        task.done = true;
       });
     },
     removeTask: (state, action) => {
