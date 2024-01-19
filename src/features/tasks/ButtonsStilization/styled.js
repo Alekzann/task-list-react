@@ -20,3 +20,8 @@ export const ButtonStyled = styled.button`
     color: hsl(180, 3%, 71%);
   }
 `;
+
+export const ButtonsContainer = styled.span`
+  justify-content: space-between;
+  align-items: center;
+`;
