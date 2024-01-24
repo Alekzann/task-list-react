@@ -1,11 +1,12 @@
 import { useSelector, useDispatch } from "react-redux";
+import { NavLink } from "react-router-dom/cjs/react-router-dom.min.js";
 import { List, Item, Content, Button } from "./styled.js";
 import {
   selectTasks,
   toggleTaskDone,
   removeTask,
   selectHideDone,
-} from "../tasksSlice.js";
+} from "../../tasksSlice.js";
 
 const TaskList = () => {
   const tasks = useSelector(selectTasks);
@@ -19,7 +20,9 @@ const TaskList = () => {
           <Button $toggleDone onClick={() => dispatch(toggleTaskDone(task.id))}>
             {task.done ? "✔" : ""}
           </Button>
-          <Content $done={task.done}>{task.content}</Content>
+          <Content $done={task.done}>
+            <NavLink to={`/zadania/${task.id}`}>{task.content}</NavLink>
+          </Content>
           <Button $remove onClick={() => dispatch(removeTask(task.id))}>
             🗑️
           </Button>

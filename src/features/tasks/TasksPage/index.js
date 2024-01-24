@@ -1,12 +1,12 @@
 import Form from "./Form/index.js";
 import TaskList from "./TaskList/index.js";
 import Buttons from "./Buttons/index.js";
-import Section from "../../common/Section";
-import Header from "../../common/Header";
-import Container from "../../common/Container/styled.js";
+import Section from "../../../common/Section/index.js";
+import Header from "../../../common/Header/index.js";
+import Container from "../../../common/Container/styled.js";
 import { ButtonExamples } from "./ButtonExamples/index.js";
 
-function Tasks() {
+function TasksPage() {
   return (
     <Container>
       <Header title="Lista zadań" />
@@ -24,4 +24,4 @@ function Tasks() {
   );
 }
 
-export default Tasks;
+export default TasksPage;
