@@ -5,6 +5,8 @@ import Section from "../../../common/Section/index.js";
 import Header from "../../../common/Header/index.js";
 import Container from "../../../common/Container/styled.js";
 import { ButtonExamples } from "./ButtonExamples/index.js";
+import Search from "./Search/index.js";
+
 
 function TasksPage() {
   return (
@@ -15,6 +17,11 @@ function TasksPage() {
         body={<Form />}
         extraHeaderContent={<ButtonExamples />}
       />
+      <Section 
+        title="Wyszukaj zadanie" 
+        body={<Search />} 
+      />
+
       <Section
         title="Lista zadań"
         body={<TaskList />}
