@@ -12,6 +12,7 @@ https://alekzann.github.io/task-list-react/
 
 - React;
 - Redux;
+- React-Router;
 - HTML;
 - CSS;
 - JavaScript;
@@ -34,7 +35,7 @@ https://alekzann.github.io/task-list-react/
 
 ## This is my Tasks-List with interactions !!!
 
-![todolist-gif](https://github.com/Alekzann/task-list-react/assets/134525143/7c5340f8-9ea5-46f1-bfd8-5818104a1a5b)
+![todolist-gif]![demo](ezgif.com-video-to-gif-converter.gif)
 
 ## Available Scripts
 
