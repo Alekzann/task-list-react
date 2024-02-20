@@ -8,6 +8,13 @@ export const ButtonStyled = styled.button`
   transition: 0.3s;
   margin: 20px;
 
+  button[disabled] {
+    opacity: 0;
+    cursor: not-allowed;
+    pointer-events: none;
+    color: red;
+  }
+
   @media (max-width: 767px) {
     display: grid;
   }
