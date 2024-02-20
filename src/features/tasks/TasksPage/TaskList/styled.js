@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styled, { css } from "styled-components";
 
 export const List = styled.ul`
@@ -66,4 +67,10 @@ export const Button = styled.button`
         border-radius: ${({ theme }) => theme.borderRadius.borderRadius}px;
       }
     `}
+`;
+
+export const StyledNavLink = styled(NavLink)`
+  text-decoration: none;
+  color: ${({ theme }) => theme.colors.secondaryColor};
+  transition: 0.3s;
 `;

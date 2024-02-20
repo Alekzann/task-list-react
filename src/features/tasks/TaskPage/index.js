@@ -8,14 +8,17 @@ import { getTaskById } from "../tasksSlice";
 function TaskPage() {
   const { id } = useParams();
   const task = useSelector((state) => getTaskById(state, id));
+  const taskContent = task ? task.content : "Nie znalieziono zadania 🥲";
+  const taskDone = task ? task.done : false;
+
   return (
     <Container>
-      <Header title="Zadanie" />
+      <Header title="Szczegóły zadania" />
       <Section
-        title={task.content}
+        title={taskContent}
         body={
           <>
-            <strong>Ukończono:</strong> {task.done ? "Tak" : "Nie"}
+            <strong>Ukończono:</strong> {taskDone ? "Tak" : "Nie"}
           </>
         }
       />
