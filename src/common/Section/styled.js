@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const SectionStyle = styled.section`
   max-width: 1000px;
   margin-bottom: 20px;
-  background-color: ${({theme}) => theme.colors.primaryColor};
+  background-color: ${({ theme }) => theme.colors.primaryColor};
   box-shadow: 1px -1px 0px 0px rgba(227, 227, 232, 0.62);
 `;
 

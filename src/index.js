@@ -6,19 +6,17 @@ import { Provider } from "react-redux";
 import { GlobalStyle } from "./GlobalStyle";
 import reportWebVitals from "./reportWebVitals";
 import store from "./store";
-import {theme} from "./theme";
+import { theme } from "./theme";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    
-      <Provider store={store}>
-        <ThemeProvider theme={theme}>
+    <Provider store={store}>
+      <ThemeProvider theme={theme}>
         <GlobalStyle />
         <App />
-        </ThemeProvider>
-      </Provider>
-    
+      </ThemeProvider>
+    </Provider>
   </React.StrictMode>
 );
 

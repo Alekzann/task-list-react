@@ -10,7 +10,7 @@ const store = configureStore({
     tasks: tasksReducer,
   },
   middleware: (getDefaultMiddleware) =>
-  getDefaultMiddleware().concat(sagaMiddleware),
+    getDefaultMiddleware().concat(sagaMiddleware),
 });
 
 sagaMiddleware.run(rootSaga);

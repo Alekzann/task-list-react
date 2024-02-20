@@ -31,7 +31,7 @@ const Form = () => {
 
   return (
     <FormStyle onSubmit={onFormSubmit}>
-        <Input
+      <Input
         ref={inputRef}
         value={newTaskContent}
         placeholder="Co jest do zrobienia"
