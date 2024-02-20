@@ -2,22 +2,20 @@ import TasksPage from "./features/tasks/TasksPage/index.js";
 import TaskPage from "./features/tasks/TaskPage/index.js";
 import AuthorPage from "./features/author/AuthorPage.js";
 import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
-import { ListWrapper, StyledNavLink, Ul } from "./styled.js";
+import { ListWrapper, StyledNavLink } from "./styled.js";
 import { List } from "./styled.js";
 
 const App = () => (
   <HashRouter>
     <nav>
-      <Ul>
-        <ListWrapper>
-          <List>
-            <StyledNavLink to="/zadania">Zadania</StyledNavLink>
-          </List>
-          <List>
-            <StyledNavLink to="/author">O autorze</StyledNavLink>
-          </List>
-        </ListWrapper>
-      </Ul>
+      <ListWrapper>
+        <List>
+          <StyledNavLink to="/zadania">Zadania</StyledNavLink>
+        </List>
+        <List>
+          <StyledNavLink to="/author">O autorze</StyledNavLink>
+        </List>
+      </ListWrapper>
 
       <Switch>
         <Route path="/zadania/:id">
