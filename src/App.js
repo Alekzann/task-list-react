@@ -4,6 +4,7 @@ import AuthorPage from "./features/author/AuthorPage.js";
 import { HashRouter, Switch, Route, Redirect } from "react-router-dom";
 import Navigation from "./Navigation/index.js";
 import Container from "./common/Container/styled.js";
+import { toAuthor, toTask, toTasks } from "./routes.js";
 
 const App = () => {
   return (
@@ -11,17 +12,17 @@ const App = () => {
       <Navigation />
       <Container>
         <Switch>
-          <Route path="/zadania/:id">
+          <Route path={toTask()}>
             <TaskPage />
           </Route>
-          <Route path="/zadania">
+          <Route path={toTasks()}>
             <TasksPage />
           </Route>
-          <Route path="/author">
+          <Route path={toAuthor()}>
             <AuthorPage />
           </Route>
           <Route path="/">
-            <Redirect to="/zadania" />
+            <Redirect to= {toTasks()}/>
           </Route>
         </Switch>
       </Container>
