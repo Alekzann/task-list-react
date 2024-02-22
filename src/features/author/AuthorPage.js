@@ -1,10 +1,10 @@
-import Container from "../../common/Container/styled";
+
 import Header from "../../common/Header";
 import Section from "../../common/Section";
 import { Div } from "./styled";
 
 const AuthorPage = () => (
-  <Container>
+  <>
     <Header title="O Autorze" />
     <Section
       title="Oleksandr Riaboshapka"
@@ -19,15 +19,15 @@ const AuthorPage = () => (
               postanowiłem że <strong>JavaScript </strong> przyprowadzi mnie do
               celu. Wreście, jestem już prawie na samym szczyciku(można
               powiedzieć że "dorosłem by otworzyć drzwi do światu
-              programowania", jest to bardzo ekscytujące. Wiem że moja nauka
+              programowania", jest to bardzo ekscytujące). Wiem że moja nauka
               dopiero się zaczyna, ale już nie mogę się doczekać pierwszej
-              pracy🤞.)
+              pracy🤞.
             </p>
           </Div>
         </>
       }
     />
-  </Container>
+  </>
 );
 
 export default AuthorPage;

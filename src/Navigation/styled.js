@@ -7,6 +7,9 @@ export const StyledNavLink = styled(NavLink)`
   &.active {
     font-weight: 700;
   }
+  &:hover {
+    text-decoration: underline;
+  }
 `;
 
 export const ListWrapper = styled.div`
@@ -22,4 +25,6 @@ export const List = styled.li`
   text-decoration: none;
   margin: 0 20px;
   color: white;
+
+  
 `;

@@ -1,5 +1,4 @@
 import { useParams } from "react-router-dom/cjs/react-router-dom.min";
-import Container from "../../../common/Container/styled";
 import Header from "../../../common/Header";
 import Section from "../../../common/Section";
 import { useSelector } from "react-redux";
@@ -12,7 +11,7 @@ function TaskPage() {
   const taskDone = task ? task.done : false;
 
   return (
-    <Container>
+    <>
       <Header title="Szczegóły zadania" />
       <Section
         title={taskContent}
@@ -22,7 +21,7 @@ function TaskPage() {
           </>
         }
       />
-    </Container>
+    </>
   );
 }
 
